@@ -35,15 +35,15 @@ git commit -m "Premier commit"
 #      -->REPOSITORY DISTANT A ENREGISTRER         : LE REPOSITORY DISTANT FOURNI.
 #      -->REPOSITORY LOCAL DANS LEQUEL ENREGISTRER : LE REPOSITORY LOCAL COURANT.
 ##############################################################################
-git remote add distant https://github.com/chat-roux/mcommerce-config-repo.git
-git remote add distant git@github.com:chat-roux/mcommerce-config-repo.git
+git remote add distantHttps https://github.com/chat-roux/mcommerce-03-config-repo.git
+git remote add distantSsh git@github.com:chat-roux/mcommerce-03-config-repo.git
 
 ##############################################################################
 # (07.)DESENREGISTRER UN REPOSITORY DISTANT COMME "CIBLE" D'UN REPOSITORY LOCAL :
 #      -->REPOSITORY DISTANT A DESENREGISTRER         : LE REPOSITORY DISTANT FOURNI.
 #      -->REPOSITORY LOCAL DANS LEQUEL DESENREGISTRER : LE REPOSITORY LOCAL COURANT.
 ##############################################################################
-git remote rm distant
+git remote rm distantSsh
 
 ##############################################################################
 # (08.)TRANSFERER LE CONTENU DU REPOSITORY DISTANT DANS LE REPOSITORY LOCAL :
@@ -59,4 +59,4 @@ git fetch
 #      -->DESTINATION DU TRANSFERT : LA "CIBLE" PRE-ENREGISTREE (REPOSITORY DISTANT).
 #      -->TYPE DE TRANSFERT : TRANSFERT AVEC ECRASEMENT.
 ##############################################################################
-git push -u distant master
+git push -u distantSsh master
